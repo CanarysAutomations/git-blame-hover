@@ -274,34 +274,16 @@ Click to toggle On/Off
 We welcome contributions! Here's how you can help:
 
 ### **Report Issues**
-Found a bug? [Create an issue](https://github.com/canarysautomationspvtltd/git-blame-hover/issues) with:
+Found a bug? [Create an issue](https://github.com/CanarysAutomations/git-blame-hover/issues) with:
 - Steps to reproduce
 - Expected vs actual behavior
 - VS Code version & OS
 
 ### **Suggest Features**
-Have an idea? [Open a feature request](https://github.com/canarysautomationspvtltd/git-blame-hover/issues) with:
+Have an idea? [Open a feature request](https://github.com/CanarysAutomations/git-blame-hover/issues) with:
 - Detailed description
 - Use case examples
 - Mockups if applicable
-
-### **Development Setup**
-```bash
-# Clone the repository
-git clone https://github.com/canarysautomationspvtltd/git-blame-hover
-
-# Install dependencies
-npm install
-
-# Open in VS Code
-code .
-
-# Start development
-npm run watch
-
-# Test the extension
-Press F5 to launch Extension Development Host
-```
 
 ## 📄 **License**
 
