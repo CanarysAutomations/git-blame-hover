@@ -297,7 +297,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
-- 📧 **Email**: [mailto:vststoolssupport@ecanarys.com](mailto:vststoolssupport@ecanarys.com)
+- 📧 **Email**: [vststoolssupport@ecanarys.com](mailto:vststoolssupport@ecanarys.com)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/CanarysAutomations/git-blame-hover/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/CanarysAutomations/git-blame-hover/discussions)
 
