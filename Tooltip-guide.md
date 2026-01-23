@@ -135,26 +135,21 @@ File History for: Controllers/ReleaseNotesController.cs
 Author Statistics for: Controllers/ReleaseNotesController.cs
 ==========================================================
 
-Total Lines: 234
-Hot Lines: 15 (modified in last 30 days)
-Oldest Commit: 2025-12-15
-Newest Commit: 2026-01-23
+📄 Current File State:
+   File Age: 10/7/2025 to 1/23/2026
 
-Author Contributions:
-  Allen:
-    Current Lines: 89 (38.0%)
-    Commits: 8
-    Total Changes: +156 -23 lines
+👥 Author Contributions (Historical Activity):
+   Note: "Total Changes" includes ALL historical commits to this file,
+   even content that may have been refactored or removed.
 
-  Sarah Chen:
-    Current Lines: 92 (39.3%)
-    Commits: 5
-    Total Changes: +203 -45 lines
+  📊 Allen:
+     Historical Activity: 1 commits, 39 total line changes
+     Detailed Changes: +39 additions, -0 deletions
 
-  Alex Johnson:
-    Current Lines: 53 (22.7%)
-    Commits: 3
-    Total Changes: +78 -12 lines
+  📊 Sarah Chen:
+     Historical Activity: 1 commits, 14 total line changes
+     Detailed Changes: +14 additions, -0 deletions
+
 ```
 
 **Key Metrics Explained**:
