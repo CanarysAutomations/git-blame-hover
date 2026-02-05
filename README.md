@@ -1,6 +1,62 @@
-# Git Blame (On hover)
+# Git Blame Hover
 
-> 🚀 **Instant git blame information on hover - lightweight, zero-config, with smart tooltips**
+**Git blame, exactly when you want it - nowhere else.**
+
+Hover over any line of code and instantly see who changed it, when, and why.
+No gutters. No sidebars. No noise.
+
+## ✨ **Why Git Blame Hover?**
+
+Most Git extensions try to turn VS Code into a Git dashboard. Git Blame Hover does one thing — and does it quietly.
+
+  - Shows blame only on hover <br>
+  - Zero visual clutter <br>
+  - Lightweight & fast <br>
+  - Works with GitHub, GitLab, Azure Repos, Bitbucket <br>
+  - Ideal for large repos & enterprise codebases <br>
+
+## 🖱️ **How it works**
+Just hover your mouse over a line of code.
+
+You’ll see:
+  - Author name
+  - Commit date
+  - Commit message (the “why”)
+  - Commit hash
+
+Move away → it disappears.
+
+That’s it.
+
+## 🧠 **When should you use Git Blame Hover?**
+
+Use this extension if you:
+  - Only want Git blame when you ask for it
+  - Don’t want gutter annotations or overlays
+  - Prefer minimal tooling during code reviews
+  - Already disabled most GitLens features
+  - Work in large or performance-sensitive repositories
+
+## **🚀 Performance-first by design**
+  - No background Git scans
+  - Blame runs only on hover
+  - Cached per file & commit
+  - No telemetry
+  - No network calls
+  - Works fully offline
+
+Built to be safe for monorepos and enterprise environments.
+
+## **🔐 Enterprise-friendly**
+  - No data collection
+  - No external services
+  - Uses local Git only
+  - Predictable behavior
+Safe for locked-down environments.
+
+![git-blame-hover-in-action](./docs/images/git-blame-hover-v4.gif)
+
+> 🚀 **Advanced git blame with hover tooltips, inline annotations, heat maps, and comprehensive analytics - instant blame information with zero configuration**
 
 ## 🎯 **What Makes This Different?**
 
@@ -14,29 +70,46 @@ Unlike other git blame extensions that clutter your status bar or add inline ann
 | 🎨 **Smart tooltips** - Rich formatting with emojis | 📋 Plain text - Basic information |
 | ⚙️ **Fully configurable** - Show exactly what you want | 🔒 Fixed format - Limited customization |
 
+
 ## ✨ **Key Features**
 
-### 🎯 **Hover-First Design**
-- **Non-intrusive**: Information appears only when you hover over a line
-- **Context-aware**: Shows relevant details exactly where your cursor is
-- **Clean workspace**: No permanent UI elements cluttering your editor
+### 🎯 **Advanced Hover Tooltips**
+- **Rich markdown tooltips**: Detailed blame info with clickable commit links
+- **Author avatars**: Gravatar integration for visual author identification
+- **Platform detection**: Direct links to GitHub, GitLab, Bitbucket, Azure Repos
+- **File context**: Shows file path, line numbers, and commit statistics
+- **Error handling**: Clear, user-friendly error messages with helpful suggestions
 
-### ⚡ **Performance Optimized**
-- **Smart debouncing**: Prevents excessive git calls during rapid mouse movement
-- **Intelligent caching**: Reuses blame data for better performance
+### 📝 **Inline Annotations (Optional)**
+- **End-of-line annotations**: Subtle blame info at line endings
+- **Customizable format**: Configure what information to show inline
+- **Performance aware**: Only renders visible lines
+- **Toggleable**: Enable/disable per preference
+
+### 🗺️ **Visual Heat Maps**
+- **Code age visualization**: Color-coded lines based on commit age
+- **Hot spots identification**: Quickly spot frequently changed areas
+- **Configurable colors**: Customize heat map appearance
+- **Performance optimized**: Efficient rendering for large files
+
+### 📊 **Author Analytics & Statistics**
+- **File contribution stats**: See who contributed what percentage
+- **Author activity maps**: Understand team collaboration patterns
+- **Timeline analysis**: Oldest and newest commits per file
+- **Line ownership**: Detailed breakdown by author
+
+### ⚡ **Performance & Caching**
+- **Advanced caching**: Intelligent cache with configurable timeouts
+- **Smart debouncing**: Prevents excessive git operations
+- **File size limits**: Configurable limits for large files
+- **Loading indicators**: Visual feedback during git operations
 - **Cancellation support**: Respects VS Code's cancellation tokens
 
-### 🎨 **Rich Tooltips**
-- **Visual formatting**: Uses emojis and markdown for better readability
-- **Relative time**: Shows "2 hours ago" instead of cryptic timestamps
-- **Platform detection**: Identifies GitHub, GitLab, Bitbucket, Azure Repos
-- **Error handling**: Clear, user-friendly error messages
-
-### ⚙️ **Highly Configurable**
-- **Selective display**: Choose exactly what information to show
-- **Custom formatting**: Control tooltip appearance and content
-- **Performance tuning**: Adjust hover delays and message lengths
-- **Quick toggle**: Enable/disable with status bar button
+### 🔗 **Platform Integration**
+- **Clickable commits**: Direct links to commit pages
+- **Repository detection**: Automatic platform identification
+- **Browser integration**: One-click commit viewing
+- **Multi-platform support**: GitHub, GitLab, Bitbucket, Azure DevOps
 
 ## 🚀 **Getting Started**
 
@@ -46,6 +119,8 @@ Unlike other git blame extensions that clutter your status bar or add inline ann
 3. Search for "Git Blame Hover"
 4. Click Install
 
+*Note: This extension is published by Canarys Automations. Available on VS Code Marketplace.*
+
 ### **Usage**
 1. **Open any file** in a git repository
 2. **Hover over any line** of code
@@ -53,30 +128,16 @@ Unlike other git blame extensions that clutter your status bar or add inline ann
 
 That's it! No configuration required. 🎉
 
-## 📸 **Screenshots**
+### **Enhanced Hover Tooltip in Action**
 
-### **Hover Tooltip in Action**
-```
-When you hover over line 42:
+![Hover Tooltip Example](./docs/images/on-hover.png)
 
-┌─────────────────────────────────────────┐
-│ 👤 Author: John Doe                     │
-│ 📅 Date: 2 hours ago                    │
-│ 📝 Message: Fix authentication bug      │
-│ #️⃣ Commit: a1b2c3d                      │
-│ 🌐 Platform: GitHub                     │
-└─────────────────────────────────────────┘
-```
+### **Inline Annotations**
+
+![Hover In Action](./docs/images/hover_in_action.png)
 
 ### **Error Handling**
-```
-For non-git files:
-
-┌─────────────────────────────────────────┐
-│ ⚠️ Error: Not a git repository          │
-└─────────────────────────────────────────┘
-```
-
+![Error Handling Example](./docs/images/error_message.png)
 ### **Status Bar Toggle**
 ```
 Bottom right corner: [$(git-commit) Blame: On]
@@ -85,13 +146,15 @@ Click to toggle On/Off
 
 ## ⚙️ **Configuration**
 
-### **Quick Settings**
+### **Core Settings**
 
 | Setting | Default | Description |
 |---------|---------|-------------|
 | `gitBlameHover.enable` | `true` | Enable/disable the extension |
 | `gitBlameHover.showRelativeTime` | `true` | Show "2 hours ago" vs "1/8/2026" |
 | `gitBlameHover.hoverDelay` | `200` | Delay before tooltip appears (ms) |
+| `gitBlameHover.enableClickableCommits` | `true` | Make commit hashes clickable links |
+| `gitBlameHover.showLoadingIndicator` | `true` | Show loading indicator during operations |
 
 ### **Tooltip Customization**
 
@@ -102,7 +165,28 @@ Click to toggle On/Off
 | `gitBlameHover.showMessage` | `true` | Show 📝 commit message |
 | `gitBlameHover.showCommitId` | `true` | Show #️⃣ commit hash |
 | `gitBlameHover.showPlatform` | `true` | Show 🌐 platform info |
+| `gitBlameHover.showAuthorAvatar` | `false` | Show 🖼️ author avatars (Gravatar) |
 | `gitBlameHover.maxCommitMessageLength` | `100` | Max message length (0 = no limit) |
+
+### **Inline Annotations**
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `gitBlameHover.enableInlineAnnotations` | `false` | Show blame info at line endings |
+| `gitBlameHover.inlineAnnotationFormat` | `"👤 {author} • {timeAgo}"` | Annotation format template |
+
+### **Heat Maps & Visual Features**
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `gitBlameHover.enableHeatMap` | `false` | Show visual heat map for code age |
+
+### **Performance Settings**
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `gitBlameHover.cacheTimeout` | `300000` | Cache timeout in milliseconds (5 min) |
+| `gitBlameHover.maxFileSize` | `1048576` | Max file size for processing (1MB) |
 
 ### **Example Configuration**
 
@@ -114,8 +198,10 @@ Click to toggle On/Off
   "gitBlameHover.showAuthor": true,
   "gitBlameHover.showDate": true,
   "gitBlameHover.showMessage": true,
-  "gitBlameHover.showCommitId": false,
-  "gitBlameHover.showPlatform": false,
+  "gitBlameHover.showCommitId": true,
+  "gitBlameHover.showPlatform": true,
+  "gitBlameHover.showAuthorAvatar": true,
+  "gitBlameHover.enableClickableCommits": true,
   "gitBlameHover.maxCommitMessageLength": 80
 }
 ```
@@ -127,106 +213,52 @@ Click to toggle On/Off
 {
   "gitBlameHover.showMessage": false,
   "gitBlameHover.showCommitId": false,
-  "gitBlameHover.showPlatform": false
+  "gitBlameHover.showPlatform": false,
+  "gitBlameHover.showAuthorAvatar": false
 }
 ```
 
-### **Detailed Setup** (Everything visible)
+### **Full-Featured Setup** (All features enabled)
 ```json
 {
-  "gitBlameHover.showRelativeTime": false,
+  "gitBlameHover.showAuthorAvatar": true,
+  "gitBlameHover.enableInlineAnnotations": true,
+  "gitBlameHover.enableHeatMap": true,
+  "gitBlameHover.enableClickableCommits": true,
+  "gitBlameHover.inlineAnnotationFormat": "👤 {author} • {timeAgo} • #{hash}",
   "gitBlameHover.maxCommitMessageLength": 0,
   "gitBlameHover.hoverDelay": 100
 }
 ```
 
-### **Performance Setup** (Slower devices)
+### **Performance Setup** (Large repositories)
 ```json
 {
   "gitBlameHover.hoverDelay": 500,
-  "gitBlameHover.maxCommitMessageLength": 50
+  "gitBlameHover.maxCommitMessageLength": 50,
+  "gitBlameHover.showAuthorAvatar": false,
+  "gitBlameHover.enableInlineAnnotations": false,
+  "gitBlameHover.enableHeatMap": false,
+  "gitBlameHover.cacheTimeout": 600000,
+  "gitBlameHover.maxFileSize": 2097152
 }
 ```
 
-## 🛠️ **Commands**
-
-| Command | Keybinding | Description |
-|---------|------------|-------------|
-| `Git Blame Hover: Toggle Enable/Disable` | None | Toggle extension on/off |
+### **Visual Focus Setup** (Annotations + Heat Maps)
+```json
+{
+  "gitBlameHover.enableInlineAnnotations": true,
+  "gitBlameHover.enableHeatMap": true,
+  "gitBlameHover.inlineAnnotationFormat": "👤 {author} • {timeAgo}",
+  "gitBlameHover.showAuthorAvatar": true,
+  "gitBlameHover.hoverDelay": 150
+}
+```
 
 **Access via:**
 - Command Palette (`Ctrl+Shift+P`)
 - Status bar button click
 
-## 🔧 **Troubleshooting**
-
-### **Common Issues**
-
-#### **"Git not found in PATH" Error**
-**Cause**: Git is not installed or not in system PATH
-**Solution**: 
-1. Install Git from [git-scm.com](https://git-scm.com)
-2. Restart VS Code
-3. Verify with `git --version` in terminal
-
-#### **"Not a git repository" Error**
-**Cause**: File is not in a git repository
-**Solution**: Initialize git in your folder: `git init`
-
-#### **No hover tooltip appears**
-**Possible causes:**
-1. Extension is disabled - Check status bar or settings
-2. File is not git-tracked - Add file to git: `git add filename`
-3. Hover delay is too high - Reduce `hoverDelay` setting
-
-#### **Slow performance**
-**Solutions:**
-1. Increase `hoverDelay` to 300-500ms
-2. Reduce `maxCommitMessageLength` to 50-80
-3. Disable less important info (platform, commit ID)
-
-### **Debug Steps**
-1. Check extension is enabled in status bar
-2. Open Developer Tools (`Help > Toggle Developer Tools`)
-3. Look for error messages in Console tab
-4. Try toggling extension off/on
-
-## 🚀 **Performance Tips**
-
-### **Optimize for Large Repositories**
-```json
-{
-  "gitBlameHover.hoverDelay": 300,
-  "gitBlameHover.maxCommitMessageLength": 60,
-  "gitBlameHover.showPlatform": false
-}
-```
-
-### **Optimize for Remote Work (Slow Git)**
-```json
-{
-  "gitBlameHover.hoverDelay": 500,
-  "gitBlameHover.showMessage": false,
-  "gitBlameHover.showPlatform": false
-}
-```
-
-## 🤔 **FAQ**
-
-### **Q: How is this different from the popular Git Blame extension?**
-**A:** The popular extension shows blame info in the status bar and inline. Git Blame Hover shows info only when you hover, keeping your workspace clean.
-
-### **Q: Does it work with all Git platforms?**
-**A:** Yes! Detects GitHub, GitLab, Bitbucket, Azure Repos, and shows "Local/Other" for custom setups.
-
-### **Q: Will it slow down my editor?**
-**A:** No! It uses smart debouncing and caching. Git commands only run when you actually hover over lines.
-
-### **Q: Can I use both this and other git blame extensions?**
-**A:** Yes! This extension doesn't conflict with others since it only uses hover events.
-
-### **Q: What about uncommitted changes?**
-**A:** Shows "You" as author, "just now" as time, and "Uncommitted changes" as message.
 
 ## 🎯 **Supported Platforms**
 
@@ -243,64 +275,22 @@ Click to toggle On/Off
 - **VS Code**: Version 1.90.0 or higher
 - **Git**: Must be installed and available in PATH
 - **Repository**: Must be a valid git repository
+- **File Size**: Files under 1MB (configurable via `maxFileSize` setting)
 
 ## 🐛 **Known Limitations**
 
-1. **Large files**: Very large files (>10MB) may have slower git blame performance
+1. **Large files**: Files exceeding the size limit (default 1MB) are skipped for performance
 2. **Binary files**: No blame information for binary files
 3. **Merge conflicts**: Limited info during active merge conflicts
 4. **Shallow clones**: May show incomplete history information
-
-## 🔄 **Changelog**
-
-### **v0.0.12** - Latest
-- ✨ Added relative time display ("2 hours ago")
-- ⚡ Implemented hover debouncing for better performance  
-- 🛠️ Improved error messages and handling
-- ⚙️ Added configurable tooltip format options
-- 🎨 Enhanced tooltip formatting with emojis
-
-### **v0.0.11** 
-- 🐛 Fixed platform detection issues
-- 📝 Updated documentation
-
-### **v0.0.10**
-- 🚀 Initial release
-- ✨ Basic hover functionality
-- 🎯 Status bar toggle
-
-## 🤝 **Contributing**
-
-We welcome contributions! Here's how you can help:
-
-### **Report Issues**
-Found a bug? [Create an issue](https://github.com/CanarysAutomations/git-blame-hover/issues) with:
-- Steps to reproduce
-- Expected vs actual behavior
-- VS Code version & OS
-
-### **Suggest Features**
-Have an idea? [Open a feature request](https://github.com/CanarysAutomations/git-blame-hover/issues) with:
-- Detailed description
-- Use case examples
-- Mockups if applicable
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 **Acknowledgments**
-
-- Thanks to the VS Code team for the excellent extension API
-- Inspired by the need for cleaner git blame UX
-- Community feedback and feature requests
+5. **Cache dependency**: Cached results may be stale until cache timeout (5 minutes default)
 
 ## 📞 **Support**
 
+- 📧 **Email**: [vststoolssupport@ecanarys.com](mailto:vststoolssupport@ecanarys.com)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/CanarysAutomations/git-blame-hover/issues)
-
 ---
 
-**Developed by [Canarys Automations](https://www.ecanarys.com)**
+**Made with ❤️ by [Canarys Automations](https://www.ecanarys.com)**
 
 *If you find this extension helpful, please ⭐ star the repository and leave a review on the marketplace!*
