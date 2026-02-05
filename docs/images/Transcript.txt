@@ -1,0 +1,98 @@
+1
+While working in large codebases, one common question developers ask is —
+Who changed this line of code, and why?
+Traditionally, we switch to terminal or run git blame, which breaks the flow.
+Let me show you how Git Blame Hover, a VS Code extension, solves this instantly — right inside the editor
+
+===
+2
+Now let’s quickly see how to install this extension.
+
+Open the VS Code Extensions Marketplace, search for
+Git Blame Hover.
+
+You’ll find the extension published by Canarys Automations Limited.
+Click Install — that’s it. No configuration required
+===
+3
+Once installed, the extension works automatically.
+
+You can:
+
+Enable or disable it anytime
+
+Auto-update it
+
+And start using blame information instantly
+
+As soon as you open a Git-tracked file and hover over any line — the insights appear
+====
+4
+Here, I’m simply hovering over a line of code.
+And instantly, I get git blame information — without clicking anything.
+
+It shows:
+
+Author name
+
+Commit date
+
+Commit message
+
+Commit hash
+
+And even the platform, like Azure Repos or GitHub
+
+All this appears as a clean tooltip, right where I’m coding
+===
+5
+What makes this extension powerful is that it’s not just informational — it’s interactive.
+
+From this hover itself, I can:
+
+Copy the commit hash
+
+View full commit details
+
+Open file history
+
+Or check author statistics
+
+No context switching. No terminal. Just hover and act.
+===
+6
+When I click File History, the extension shows a chronological list of commits that modified this file.
+
+I can see:
+
+Commit IDs
+
+Authors
+
+Dates
+
+And commit messages
+
+This helps me understand how the file evolved over time — perfect for debugging or reviews
+===
+7
+Next, let’s look at Author Stats.
+
+Here, the extension summarizes:
+
+Total commits per author
+
+Total line additions and deletions
+
+Historical contribution activity
+
+This is extremely useful to understand ownership, knowledge areas, and who to reach out to for questions.
+===
+
+Git Blame Hover is a lightweight yet powerful extension that brings git blame directly into your coding workflow.
+
+✔ Zero configuration
+✔ Instant insights on hover
+✔ Rich commit, file, and author analytics
+
+If you spend time debugging, reviewing, or maintaining code — this extension is a must-have.
