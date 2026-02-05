@@ -297,12 +297,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
-- 📧 **Email**: [vststoolssupport@ecanarys.com](mailto:vststoolssupport@ecanarys.com)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/CanarysAutomations/git-blame-hover/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/CanarysAutomations/git-blame-hover/discussions)
 
 ---
 
-**Made with ❤️ by [Canarys Automations](https://www.ecanarys.com)**
+**Developed by [Canarys Automations](https://www.ecanarys.com)**
 
 *If you find this extension helpful, please ⭐ star the repository and leave a review on the marketplace!*
